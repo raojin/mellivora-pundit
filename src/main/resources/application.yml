@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mellivora
+    username: root
+    password: admin123
+mybatis:
+  mapper-locations: classpath:com.mellivora.pundit.mapper/*.xml
+  type-aliases-package: com.mellivora.pundit.entity
